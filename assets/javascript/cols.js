@@ -2,17 +2,18 @@
 
 const agregar_pregunta = document.getElementById('agregar_pregunta')
 agregar_pregunta.addEventListener('click', agregar)
-
+const enviar = document.getElementById('finalizar')
+enviar.addEventListener('click',finalizar)
 function agregar() {
     const div = document.createElement('div');
     const pregunta = (
-`<div class="row cuestionario">
+`<div class="row cuestionario pregunta">
   <div class="card tarjeta mt-2">
       <div class="card-body ">
           <form>
               <div class="form-row mb-2">
                   <div class="col-8">
-                      <input type="email" class="form-control" id="exampleInputEmail1"
+                      <input type="text" class="form-control preguntaText" 
                           aria-describedby="emailHelp" placeholder="Pregunta">
                   </div>
                   <div class="col-4 ">
@@ -53,6 +54,20 @@ function agregar() {
 
 }
 
+function finalizar(){
+    window.location.href = "invitar.html";
+}
+/*
+function finalizar(){
+    const cuestionario = document.getElementById('cuestionario');
+    preguntas = cuestionario.getElementsByClassName('pregunta');
+    for(let i = 0; i<preguntas.length;i++){
+        texto = preguntas[i].getElementsByClassName("preguntaText")
+        console.log(texto[0].value)
+        texto[0] = "hola"
+        console.log(preguntas[i])
+    }
+}*/
 var comfyText = (function () {
     var tag = document.querySelectorAll('textarea')
     for (var i = 0; i < tag.length; i++) {

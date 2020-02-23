@@ -1,0 +1,11 @@
+{
+    "datos":{
+        "email":"fer@gmail.com",
+        "pass":"fernando",
+        "name":"Fernando Saavedra",
+        "dir":"mi casa en la esquina por allá",
+        "city":"Mexico",
+        "state":"CDMX",
+        "zip":"14346"
+    }
+}
