@@ -63,6 +63,31 @@ html,body{
     text-align: center;
 }
 /*-------------------                      -------------------
+/*                          cuestionario
+  -------------------                      -------------------*/
+
+.cuestionario{
+    justify-content: center;
+}
+.tarjeta{
+    width: 75%;
+}
+.tarjeta-header{
+    background-color: #007bff;
+}
+.descArea{
+    border: none;
+    resize: none;
+    border-radius: 0;
+    transition: 0.2s;
+    overflow: hidden;
+}
+.descArea:focus{
+    border-bottom: 2px solid #007bff;
+    outline: 0;
+    box-shadow: none;
+}
+/*-------------------                      -------------------
 /*                       registro basico
   -------------------                      -------------------*/
 @media screen and (min-width:768px){
