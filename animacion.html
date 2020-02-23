@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
+    <title>Gracias por su registro</title>
+    <style>
+        *,
+        *:after,
+        *:before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #contenedor_carga {
+            background-color: #f6f6f6;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 1s ease;
+        }
+
+        #carga {
+            border: 15px solid #ccc;
+            border-top-color: #f4266a;
+            border-top-style: groove;
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            animation: girar 1s linear infinite;
+        }
+
+        h1 {
+            color: #f4266a;
+        }
+
+        @keyframes girar {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+        <h1>¡Gracias por su registro! &#x1F60A;</h1>
+    </div>
+    <script>
+        setTimeout(function(){
+            window.location.href = 'registro.html';
+         }, 2000);
+        
+
+    </script>
+</body>
+
+</html>

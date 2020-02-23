@@ -1,3 +1,6 @@
+/*-------------------                      -------------------
+/*                      registro basico
+  -------------------                      -------------------*/
 html,body{
     display: flex;
     flex-direction: column;
@@ -9,7 +12,7 @@ html,body{
 }
 .top{
     display: flex;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 70px);
     align-items: center;
     justify-content: center;
 }
@@ -30,8 +33,49 @@ html,body{
     text-transform: uppercase;
     font-size: 2rem;
     color: #007bff;
+    text-align: center;
 }
 
+/*-------------------                      -------------------
+/*                   registro administrador
+  -------------------                      -------------------*/
+.register{
+    display: flex;
+    align-items: center;
+}
+
+/*-------------------                      -------------------
+/*                          bloqueo
+  -------------------                      -------------------*/
+.table-container{
+    align-items: flex-start;
+}
+.header-bloqueo{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #007bff;
+    text-align: center;
+}
+.table{
+    text-align: center;
+}
+/*-------------------                      -------------------
+/*                       registro basico
+  -------------------                      -------------------*/
+@media screen and (min-width:768px){
+    .register{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+/*-------------------                      -------------------
+/*                   registro administrador
+  -------------------                      -------------------*/
 @media screen and (min-height:780px){
     .formulario{
         background-color: #fff;
@@ -40,4 +84,5 @@ html,body{
                 0 20px 20px -12px #000;
 
     }
+
 }
